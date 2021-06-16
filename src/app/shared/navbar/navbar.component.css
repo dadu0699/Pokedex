@@ -1,5 +1,5 @@
 ul {
-  margin: 0px auto 2%;
+  margin: 0px auto 0%;
   padding: 0;
   list-style: none;
   display: table;
@@ -10,11 +10,12 @@ ul {
 li {
   display: table-cell;
   position: relative;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 a {
   color: #fff;
+  font-size: 1.5em;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;

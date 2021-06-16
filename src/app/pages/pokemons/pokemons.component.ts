@@ -23,11 +23,12 @@ export class PokemonsComponent implements OnInit {
   private async getPokemons(): Promise<void> {
     try {
       const data = await this._pokemonService.getPokemons(this.offset);
-      data.results.forEach((pokemon: any) => {
-        this.setPokemon(pokemon['name']);
-      });
 
-      if ((<Array<any>>data.results).length === 0) {
+      for (const pokemon of data.results) {
+        await this.setPokemon(pokemon['name']);
+      }
+
+      if (data.results.length === 0) {
         console.log('fin');
       }
     } catch (err) {
