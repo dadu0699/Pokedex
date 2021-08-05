@@ -13,11 +13,11 @@ import { PokemonsComponent } from './pokemons/pokemons.component';
 @NgModule({
   declarations: [
     PagesComponent,
-    PokemonsComponent,
     PokemonsComponent
   ],
   exports: [
-    PagesComponent
+    PagesComponent,
+    PokemonsComponent
   ],
   imports: [
     CommonModule,
